@@ -6,7 +6,7 @@
         <p>3. Writing using window.alert()</p>
         <button onClick='window.print()'>Printing the page</button>
         <p id="hello"></p>
-        
+        console.log('hi')
         <script>
             document.getElementById('hello').innerHTML=5+7
             document.write(5+7);
