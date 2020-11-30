@@ -2,11 +2,23 @@
     <body>
         <h3>Javascript Statements</h3>
         <p id='hi'></p>
+        <p>JavaScript code blocks are written between { and }</p>
+
+        <button type="button" onclick="myFunction()">Click Me!</button>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
         <script>
             var a=40;
             var b=12;
             var c=a+b;
             document.getElementById('hi').innerHTML=c;
-        </script>
+
+            function myFunction()
+            {
+            document.getElementById('demo1').innerHTML='Hi, how are you?';
+            document.getElementById('demo2').innerHTML='Are you fine?';
+            }
+            </script>
     </body>
 </html>
