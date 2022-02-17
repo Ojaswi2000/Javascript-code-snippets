@@ -24,3 +24,11 @@ servername.getservername();
 //     }
 // }
 // 
+
+const servername={
+    name:"Discord",
+    getservername:function(){
+        console.log(name);
+    }
+}
+servername.getservername();    // This code will will. The correct way of writing it is: this.name
