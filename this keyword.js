@@ -49,3 +49,11 @@ function ab(){
     console.log(this.a);
 }
 ab();                       // This code will print a=10;
+
+
+7. var a=10;
+function ab(){
+    var a=20;
+    console.log(a);
+}
+ab();                       // This code will print a=20;
