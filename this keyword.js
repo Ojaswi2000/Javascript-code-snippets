@@ -92,3 +92,25 @@ servername.getservername.call(server2,1,2);       // The output of the code will
                                                    // {name: 'Happy'}
                                                    //  -1
 // The output of the above written code is:         {name: 'Happy'}
+
+
+
+10.  // The call method and apply method difference
+    const servername={
+    name:"Discord",
+    getservername:function(a,b){
+        console.log(this);
+        console.log(a-b);
+    }
+}
+
+const server2={
+    name:"Happy"
+}
+
+servername.getservername.apply(server2,[1,2]);       // The output of the code will be: 
+                                                   // {name: 'Happy'}
+                                                   //  -1
+// The output of the above written code is:         {name: 'Happy'}
+
+// Call accepts parameters without the square brackets and the apply method accepts them using [].
