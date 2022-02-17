@@ -57,3 +57,19 @@ function ab(){
     console.log(a);
 }
 ab();                       // This code will print a=20;
+
+
+8.  // The call method
+    const servername={
+    name:"Discord",
+    getservername:function(){
+        console.log(this);
+    }
+}
+
+const server2={
+    name:"Happy"
+}
+
+servername.getservername.call(server2)
+// The output of the above written code is:         {name: 'Happy'}
