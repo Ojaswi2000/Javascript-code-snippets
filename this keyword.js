@@ -32,3 +32,20 @@ const servername={
     }
 }
 servername.getservername();    // This code will will. The correct way of writing it is: this.name
+
+
+
+var a=10;
+function ab(){
+    var a=20;
+    console.log(this);
+}
+ab();                        // This code will print the global scope with value of a=10;
+
+
+var a=10;
+function ab(){
+    var a=20;
+    console.log(this.a);
+}
+ab();                       // This code will print a=10;
