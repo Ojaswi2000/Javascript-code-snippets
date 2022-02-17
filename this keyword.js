@@ -6,3 +6,8 @@ function myfunc(){
     console.log(this);
 }
 myfunc(); // this return a window object on the screen
+
+
+// variable becomes a property and function becomes a method in the console using this
+
+
